@@ -1,0 +1,41 @@
+button {
+  background-color: rgb(28, 96, 118);
+  color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+}
+button:hover {
+  background-color: rgb(82, 127, 142);
+  color: white;
+}
+h1 {
+  color: white;
+
+  left: 20%;
+}
+nav {
+  margin: 0;
+  float: left;
+  text-align: center;
+  left: 10%;
+  width: 15%;
+  font-size: 64;
+  color: white;
+}
+nav ul {
+  left: 0;
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+nav:hover ul {
+  display: block;
+}
+
+nav ul li a {
+  color: white;
+  margin-left: 10%;
+}
+nav ul li a:hover {
+  color: black;
+}

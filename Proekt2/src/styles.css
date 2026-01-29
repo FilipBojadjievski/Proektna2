@@ -1,56 +1,274 @@
-/* You can add global styles to this file, and also import other style files */
-.is-even {
-  scale: 120 px;
-  color: rgb(164, 74, 74);
+.Main-Part {
+  height: 85%;
+  background:
+    linear-gradient(to bottom, rgba(89, 185, 230, 1), rgba(28, 96, 118, 0.5)),
+    url("background.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10%;
+  margin: 0;
 }
-.is-even div {
-  background-color: aqua;
-  border-color: rgb(53, 53, 177);
+
+.user_profile {
+  border-radius: 100%;
+  max-height: 25px;
 }
-.is-even .begin {
-  background-color: rgb(85, 133, 77);
-  border-color: rgb(85, 133, 77);
-}
-.is-first {
-  color: rgb(138, 211, 125);
-}
-.Home {
+.Gallery {
+  background: linear-gradient(to bottom, rgb(169, 222, 222), rgb(28, 96, 118));
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
-  background-color: brown;
-  margin-left: 0;
-  margin-right: 0;
+  margin-top: 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-.title {
-  width: 30%;
+.Gallery ul {
+  justify-content: center;
+  align-items: center;
 }
-.slika {
+
+.image {
+  background-color: lightgray;
+  max-width: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 10%;
+  padding: 3%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image h2 {
+  color: rgb(121, 109, 109);
+}
+.image textarea {
   width: 100%;
+}
+.commentButton {
+  background-color: rgb(70, 65, 65);
+  color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+}
+.commentButton:hover {
+  background-color: rgb(204, 199, 199);
+  color: black;
+}
+.image .deleteButton {
+  background-color: rgb(70, 65, 65);
+  color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+  height: 20 px;
+  width: 20 px;
+  display: inline;
+  margin-left: 5%;
+}
+.image .deleteButton:hover {
+  background-color: rgb(204, 199, 199);
+  color: black;
+}
+.image img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.Blog {
+  background-color: rgb(209, 159, 88);
+  max-width: 75%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 5%;
+  padding: 3%;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
-.main {
-  background-color: lightcyan;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  height: 10%;
-  border-top: 3px;
-  border-color: rgb(139, 139, 233);
-  border-style: dashed;
+.Blog-bg {
+  background: linear-gradient(to bottom, rgb(28, 96, 118), rgb(30, 111, 64));
+  margin-top: 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
-.begin {
-  background-color: rgb(64, 246, 94);
-  margin-top: 10px;
-  margin-bottom: 10px;
+.Blog h2 {
+  color: rgb(101, 76, 42);
+}
+.Blog h1 {
+  color: rgb(66, 50, 28);
+}
+.Blog h3 {
+  color: rgb(66, 50, 28);
+}
+.Blog textarea {
+  width: 100%;
+  height: 60%;
+}
+.blog_posts {
+  list-style: none;
+}
+.Blog button {
+  background-color: rgb(99, 75, 42);
+  color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+}
+.Blog button:hover {
+  background-color: rgb(217, 165, 93);
+  color: black;
+}
+.blog_posts li .deleteButton {
+  background-color: rgb(170, 100, 46);
+  color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+  height: 10 px;
+  width: 10 px;
+  display: block;
+  margin-left: 5%;
+
+  margin-left: 0%;
+}
+.Blog .deleteButton:hover {
+  background-color: rgb(204, 199, 199);
+  color: black;
+}
+.Blog input {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.blog_posts li {
+  margin: 3%;
+  padding-left: 2%;
+  border-style: dashed;
+  border-color: black;
+  border-width: 1%;
+}
+
+.login_page {
+  right: 0%;
+  position: fixed;
+}
+header {
+  background-color: #5ab8e5;
+  color: white;
+  postion: fixed;
+  height: 15%;
+  padding-top: 3%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.Main-Part p {
   text-align: center;
+  color: white;
+  text-size: 48;
+}
+footer {
+  position: fixed;
+  background-color: #5ab8e5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+div {
+  margin: 0;
+}
+
+.Feedback {
+  background-color: rgb(159, 50, 50);
+  color: white;
+  max-width: 50%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 5%;
+  padding: 3%;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  height: 10%;
-  border-top: 3px;
-  border-color: rgb(227, 227, 255);
-  border-style: dashed;
+}
+
+.Feedback ol li {
+  padding: 1%;
+}
+.Feedback-bg {
+  background: linear-gradient(to bottom, rgb(30, 111, 64), rgb(13, 65, 7));
+  margin-top: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.Feedback button {
+  background-color: rgb(208, 144, 144);
+  color: white;
+}
+.Feedback button:hover {
+  background-color: rgb(152, 37, 37);
+  color: black;
+}
+.Feedback ol li textarea {
+  display: block;
+  width: 100%;
+}
+.Feedback input::placeholder {
+  color: rgb(82, 14, 14);
+}
+.Field {
+  background-color: rgb(229, 152, 152);
+  color: rgb(82, 14, 14);
+}
+.Error {
+  color: rgb(255, 230, 0);
+  display: inline;
+}
+footer div a {
+  color: rgb(125, 251, 251);
+}
+.ActiveDislike {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+}
+.ActiveLike {
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+}
+.Liked {
+  color: blue;
+}
+.Disliked {
+  color: red;
+}
+.LikeBtn {
+  background-color: rgb(70, 65, 65);
+  color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+  border-radius: 50%;
+}
+.LikeBtn:hover {
+  background-color: blue;
+}
+.DislikeBtn {
+  background-color: rgb(70, 65, 65);
+  color: white;
+  border-radius: 5%;
+  margin-top: 5%;
+  border-radius: 50%;
+}
+.DislikeBtn:hover {
+  background-color: red;
 }
