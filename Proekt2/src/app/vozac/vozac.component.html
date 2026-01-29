@@ -1,0 +1,28 @@
+<ng-template #empty>
+  empty
+  <div>&nbsp;</div>
+</ng-template>
+<div [class]="klasi()" *ngIf="shofer?.name; else empty">
+  <ng-template #noImg> Nema slika :( </ng-template>
+  <img
+    *ngIf="shofer?.iconUrl; else noImg"
+    class="slika"
+    [src]="shofer?.iconUrl"
+  />
+  <p [style.text-decoration]="stilovi()">Name:{{ shofer?.name }}</p>
+  <p>Team:{{ shofer?.team }}</p>
+  <p>
+    Points: <b>{{ shofer?.points }}</b>
+  </p>
+  <p>
+    {{ indeks }}
+  </p>
+  <div>Category</div>
+  <div [ngSwitch]="shofer?.category">
+    <div *ngSwitchCase="'EXPERT'">Profi</div>
+    <div *ngSwitchCase="'LUNATIC'">Ludi</div>
+    <div *ngSwitchCase="'AS'">Stari</div>
+    <div *ngSwitchDefault>Debeli</div>
+  </div>
+  <button (click)="funk()">Stisni me</button>
+</div>

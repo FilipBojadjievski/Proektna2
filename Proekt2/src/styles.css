@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+.is-even {
+  scale: 120 px;
+  color: rgb(164, 74, 74);
+}
+.is-even div {
+  background-color: aqua;
+  border-color: rgb(53, 53, 177);
+}
+.is-even .begin {
+  background-color: rgb(85, 133, 77);
+  border-color: rgb(85, 133, 77);
+}
+.is-first {
+  color: rgb(138, 211, 125);
+}
+.Home {
+  text-align: center;
+  background-color: brown;
+  margin-left: 0;
+  margin-right: 0;
+}
+.title {
+  width: 30%;
+}
+.slika {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main {
+  background-color: lightcyan;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 10%;
+  border-top: 3px;
+  border-color: rgb(139, 139, 233);
+  border-style: dashed;
+}
+.begin {
+  background-color: rgb(64, 246, 94);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 10%;
+  border-top: 3px;
+  border-color: rgb(227, 227, 255);
+  border-style: dashed;
+}

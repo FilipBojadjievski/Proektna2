@@ -1,0 +1,13 @@
+.adv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 10%;
+  border-top: 3px;
+  border-color: rgb(139, 139, 233);
+  border-style: dashed;
+  background-color: rgb(62, 0, 120);
+}
