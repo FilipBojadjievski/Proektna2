@@ -1,0 +1,10 @@
+<p id="Text" *ngIf="name == ''; else logged">
+  Welcome to Zurich, please login to personalize your experience. Visit our blog
+  and gallery and leave your feedback in the form.
+</p>
+<ng-template #logged
+  ><p id="Text">
+    Welcome to Zurich, {{ name }}. Visit our blog and gallery and leave your
+    feedback in the form.
+  </p></ng-template
+>

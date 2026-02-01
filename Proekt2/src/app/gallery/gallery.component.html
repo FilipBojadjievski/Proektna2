@@ -1,0 +1,15 @@
+<h1>Gallery</h1>
+<p>Here are some photographs of the city</p>
+
+<div #image>
+  <div *ngFor="let place of places; index as i">
+    <div class="image" [style.display]="view(i)">
+      <app-image [i]="i" [posted]="place" [name]="name"></app-image>
+    </div>
+  </div>
+</div>
+<button (click)="decrease(image)" class="nextButton">Prev</button>
+<p style="display: inline; text-align: center; padding-left: auto">
+  {{ todisplay + 1 }}/{{ places.length }}
+</p>
+<button (click)="increase(image)" class="nextButton">Next</button>
