@@ -1,8 +1,14 @@
-<header><app-head (nameChange)="updateName($event)"></app-head></header>
+<header id="top">
+  <app-head (nameChange)="updateName($event)"></app-head>
+</header>
 <div class="Main-Part" id="Main"><app-main [name]="name"></app-main></div>
-<div class="Gallery">
+<div class="Gallery" id="Gallery">
   <app-gallery [name]="name"></app-gallery>
 </div>
 <div class="Blog-bg">
   <app-posts></app-posts>
 </div>
+<div class="Feedback-bg">
+  <app-feedback></app-feedback>
+</div>
+<footer><app-footer></app-footer></footer>

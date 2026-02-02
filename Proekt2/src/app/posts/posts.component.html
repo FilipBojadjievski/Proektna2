@@ -15,7 +15,7 @@
   <textarea placeholder="Write your text" #contentbox></textarea>
   <button (click)="post(titlebox, contentbox)">Post</button>
   <h2 #postedpart>Posts</h2>
-  <ul class="blog_posts" id="blogPost" *ngFor="let post of posts; index as i">
+  <ul class="blog_posts" *ngFor="let post of posts; index as i">
     <app-blogs
       [style.display]="view(i)"
       [posted]="post"

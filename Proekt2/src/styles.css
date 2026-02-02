@@ -217,8 +217,11 @@ div {
   color: rgb(255, 230, 0);
   display: inline;
 }
-footer div a {
+.Link {
   color: rgb(125, 251, 251);
+  display: inline;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .ActiveDislike {
   background-color: red;

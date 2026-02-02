@@ -1,0 +1,67 @@
+<div class="Feedback" *ngIf="status == 0; else filled" id="Feedback">
+  <h1>Feedback</h1>
+  <p>
+    Do you have something to say about our site? Please tell us what you liked
+    and what we can improve in the future.
+  </p>
+  <form>
+    <ol>
+      <li>
+        Nickname:
+        <input
+          name="login"
+          type="text"
+          size="14"
+          maxlength="30"
+          placeholder="Nickname"
+          class="Field"
+          #nickname
+        />
+      </li>
+      <li>
+        What was your experience with our site?
+        <select class="Field">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option selected>5</option>
+        </select>
+      </li>
+      <li>
+        What was your favorite part of our site?
+        <input type="radio" name="favorite" />Title
+        <input type="radio" name="favorite" />Gallery
+        <input type="radio" name="favorite" />Blog
+        <input type="radio" name="favorite" />This form
+      </li>
+      <li>
+        When did you last visit Zurich.
+        <input type="date" class="Field" />
+      </li>
+      <li>
+        Did our site help you on your trip?
+        <input type="radio" name="y/n" />yes <input type="radio" name="y/n" />no
+      </li>
+      <li>
+        Additional Comments
+        <textarea class="Field"></textarea>
+      </li>
+      <li>
+        <input type="checkbox" #checked />
+        <p style="display: inline" #agreement>
+          I agree with my data being shared
+        </p>
+      </li>
+
+      <button type="button" (click)="feedback(nickname, checked, agreement)">
+        Submit
+      </button>
+    </ol>
+  </form>
+</div>
+<ng-template #filled>
+  <div class="Feedback">
+    <p>Thank you for filling out this form</p>
+  </div>
+</ng-template>

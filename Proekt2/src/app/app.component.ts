@@ -6,6 +6,8 @@ import { HeadComponent } from './head/head.component';
 import { MainComponent } from './main/main.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PostsComponent } from './posts/posts.component';
+import { FooterComponent } from './footer/footer.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -16,6 +18,8 @@ import { PostsComponent } from './posts/posts.component';
     MainComponent,
     GalleryComponent,
     PostsComponent,
+    FooterComponent,
+    FeedbackComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
