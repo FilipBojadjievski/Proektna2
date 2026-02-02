@@ -4,7 +4,7 @@
     style="border-radius: 100%; max-height: 25px"
   />
   <div style="display: inline">
-    <b>{{ naming() }} commented on {{ timestamp() }}:</b>
+    <b>{{ naming() }} posted on {{ timestamp() }}:</b>
     <h1>{{ posted?.title }}</h1>
     {{ posted?.content
     }}<button class="deleteButton" (click)="delete()">X</button>

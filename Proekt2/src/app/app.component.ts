@@ -25,9 +25,9 @@ import { FeedbackComponent } from './feedback/feedback.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  name: String = '';
+  name: string = '';
   poster: String = '';
-  updateName(names: String) {
+  updateName(names: string) {
     this.name = names;
   }
 }
