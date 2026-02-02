@@ -1,0 +1,10 @@
+<li>
+  <img
+    src="../../assets/images/user.png"
+    style="border-radius: 100%; max-height: 25px"
+  />
+  <div style="display: inline">
+    <b>{{ naming() }} commented on {{ timestamp() }}:</b>{{ commented?.content
+    }}<button class="deleteButton" (click)="delete()">X</button>
+  </div>
+</li>

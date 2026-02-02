@@ -7,13 +7,19 @@
 <h1>{{ posted?.name }}</h1>
 <img [src]="getlink()" />
 <h2>Comments</h2>
-<ul></ul>
+<ul *ngFor="let commented of posted?.comments; index as i">
+  <app-comments
+    [commented]="commented"
+    [ind]="i"
+    (todel)="deleteComment($event)"
+  ></app-comments>
+</ul>
 
 <textarea #textpart placeholder="Please enter a comment"></textarea>
-<button class="commentButton" (click)="comment(textpart.value)">Comment</button>
+<button class="commentButton" (click)="commentfunc(textpart)">Comment</button>
 <div>
   <button (click)="like()" [class]="styleLike()">Like</button>
-  <div style="display: inline">
+  <div style="display: inline" [class]="statusStyle()">
     {{ value() }}
   </div>
   <button (click)="dislike()" [class]="styleDislike()">Dislike</button>

@@ -5,6 +5,7 @@ import { NgFor } from '@angular/common';
 import { HeadComponent } from './head/head.component';
 import { MainComponent } from './main/main.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PostsComponent } from './posts/posts.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,6 +15,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     HeadComponent,
     MainComponent,
     GalleryComponent,
+    PostsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
